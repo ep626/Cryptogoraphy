@@ -34,23 +34,28 @@
     <main class="container">
         <section class="row">
             <div class="col-md-6">
-                <h2>About Us</h2>
-                <p>We are a team of experienced security professionals committed to providing high-quality security
-                    services to our clients.</p>
+                <h2>DES Algorithm</h2>
+                <p>(Stuff About DES)</p>
             </div>
             <div class="col-md-6">
-                <h2>Our Services</h2>
+                <h2>More Stuff About DES *Move To Bottom*</h2>
                 <ul>
-                    <li>Security Consulting</li>
-                    <li>Security Auditing</li>
-                    <li>Penetration Testing</li>
-                    <li>Security Training</li>
+                    <li>Stuff For Later</li>
+                    <li>Stuff For Later</li>
+                    <li>Stuff For Later</li>
+                    <li>Stuff For Later</li>
                 </ul>
             </div>
-            <div class="container">
-                <label for="input-box">Enter a string:</label>
-                <input type="text" id="input-box" name="input-box" class="form-control">
+            <div class="col-md-6 col-sm-6 col-xs-12" style="max-width: 400px;">
                 <h2>Encrypt</h2>
+                <label for="input-box">Enter a string to be encrypted:</label>
+                <textarea id="encrypt-input" class="form-control input-lg ng-pristine ng-valid ng-touched" rows="4" placeholder="Enter plain text to hash" ng-model="textToEncrypt" name="textToEncrypt"></textarea>
+            </div>
+
+            <div class="col-md-6 col-sm-6 col-xs-12" style="max-width: 400px;">
+                <h2>Decrypt</h2>
+                <label for="input-box">Enter a string to be decrypted:</label>
+                <textarea id="decrypt-input" class="form-control input-lg ng-pristine ng-valid ng-touched" rows="4" placeholder="Enter text to decrypt" ng-model="textToDecrypt" name="textToDecrypt"></textarea>
             </div>
         </section>
     </main>
