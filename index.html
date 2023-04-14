@@ -11,7 +11,8 @@
 </head>
 
 <style>
-    body {
+    body 
+    {
         background-image: url('https://wallpapers.com/images/file/cybersecurity-background-e6rkcqv5zzzqui0q.jpg');
         background-repeat: no-repeat;
         background-size: cover;
@@ -45,13 +46,13 @@
             <div class="row justify-content-center">
                 <div class="col-md-6">
                     <h2 style="color: rgb(197, 229, 16);">Encrypt</h2>
-                    <label for="input-box" style="color: rgb(0, 0, 0);">Enter a string to be encrypted:</label>
+                    <label for="input-box" style="color: rgb(197, 229, 16);">Enter a string to be encrypted:</label>
                     <textarea id="encrypt-input" class="form-control input-lg ng-pristine ng-valid ng-touched" rows="4"
                         placeholder="Enter plain text to hash" ng-model="textToEncrypt" name="textToEncrypt"></textarea>
                 </div>
                 <div class="col-md-6">
                     <h2 style="color: rgb(197, 229, 16);">Decrypt</h2>
-                    <label for="input-box" style="color: rgb(0, 0, 0);">Enter a string to be decrypted:</label>
+                    <label for="input-box" style="color: rgb(197, 229, 16);">Enter a string to be decrypted:</label>
                     <textarea id="decrypt-input" class="form-control input-lg ng-pristine ng-valid ng-touched" rows="4"
                         placeholder="Enter text to decrypt" ng-model="textToDecrypt" name="textToDecrypt"></textarea>
                 </div>
