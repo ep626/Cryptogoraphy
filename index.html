@@ -15,7 +15,7 @@
         background-image: url('https://wallpapers.com/images/file/cybersecurity-background-e6rkcqv5zzzqui0q.jpg');
         background-repeat: no-repeat;
         background-size: cover;
-        background-position: center center;
+        background-position: center;
     }
 </style>
 
@@ -28,7 +28,7 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="#">Cryptography Algorithm</a>
+                <a class="navbar-brand" href="#">Cryptography Algorithms</a>
             </div>
             <div class="collapse navbar-collapse" id="navbar-collapse">
                 <ul class="nav navbar-nav navbar-right">
@@ -38,6 +38,13 @@
             </div>
         </div>
     </header>
+    <!--Dropdown test-->
+    <div style="position: fixed; top: 10%; right: 10px; padding-right: 10px; transform: translateY(-10%); display: inline-block; background-color: #F9F9F9; padding: 10px; border: 1px solid #E8E8E8; border-radius: 5px;">
+        <label for="encryption_algorithm" class="required" style="color: rgb(0, 0, 0); display: block; margin-bottom: 5px;">Supported Encryptions:</label>
+        <select id="encryption_algorithm" name="encryption[algorithm]">
+          <option value="DES">DES</option>
+        </select>
+      </div>
     <!-- CODE FOR BOXES! -->
     <section class="row">
         <!--Enc and Dec containers-->
@@ -45,17 +52,27 @@
             <div class="row justify-content-center">
                 <div class="col-md-6">
                     <h2 style="color: rgb(197, 229, 16);">Encrypt</h2>
-                    <label for="input-box" style="color: rgb(0, 0, 0);">Enter a string to be encrypted:</label>
+                    <label for="input-box" style="color: rgb(197, 229, 16);">Enter a string to be encrypted:</label>
                     <textarea id="encrypt-input" class="form-control input-lg ng-pristine ng-valid ng-touched" rows="4"
                         placeholder="Enter plain text to hash" ng-model="textToEncrypt" name="textToEncrypt"></textarea>
                 </div>
                 <div class="col-md-6">
                     <h2 style="color: rgb(197, 229, 16);">Decrypt</h2>
-                    <label for="input-box" style="color: rgb(0, 0, 0);">Enter a string to be decrypted:</label>
+                    <label for="input-box" style="color: rgb(197, 229, 16);">Enter a string to be decrypted:</label>
                     <textarea id="decrypt-input" class="form-control input-lg ng-pristine ng-valid ng-touched" rows="4"
                         placeholder="Enter text to decrypt" ng-model="textToDecrypt" name="textToDecrypt"></textarea>
                 </div>
             </div>
+        </div>
+        <!--Modes Of Operations box-->
+        <div class="container">
+            <label for="MODE" style="color: rgb(197, 229, 16);">Select a Mode of Operation:</label>
+            <select class="form-control" id="mode-select">
+                <option>ECB</option>
+                <option>CBC</option>
+                <option>CFB</option>
+                <option>None</option>
+            </select>
         </div>
         <!-- CODE FOR PKEY Box -->
         <div class="container">
