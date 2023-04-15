@@ -9,13 +9,12 @@
     <!-- Include Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <!--Crypto Test-->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.0.0/crypto-js.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.1.1/crypto-js.min.js"></script>
     <script src="scripts/script.js"></script>
 </head>
 
 <style>
-    body 
-    {
+    body {
         background-image: url('https://wallpapers.com/images/file/cybersecurity-background-e6rkcqv5zzzqui0q.jpg');
         background-repeat: no-repeat;
         background-size: cover;
@@ -42,13 +41,32 @@
             </div>
         </div>
     </header>
+    <!--TEST DES-->
+    <h1>DES Encryption Demo</h1>
+    <label for="input">Enter data to encrypt:</label>
+    <input type="text" id="input">
+    <button onclick="encryptData()">Encrypt</button>
+    <div id="output"></div>
+    
+    <script>
+      function encryptData() {
+        const data = document.getElementById("input").value;
+        const key = "mysecretpassword";
+        const cipher = crypto.createCipher('des-ede3', key);
+        let encrypted = cipher.update(data, 'utf8', 'hex');
+        encrypted += cipher.final('hex');
+        document.getElementById("output").textContent = "Encrypted data: " + encrypted;
+      }
+    </script>
     <!--Dropdown test-->
-    <div style="position: fixed; top: 10%; right: 10px; padding-right: 10px; transform: translateY(-10%); display: inline-block; background-color: #F9F9F9; padding: 10px; border: 1px solid #E8E8E8; border-radius: 5px;">
-        <label for="encryption_algorithm" class="required" style="color: rgb(0, 0, 0); display: block; margin-bottom: 5px;">Supported Encryptions:</label>
+    <div
+        style="position: fixed; top: 10%; right: 10px; padding-right: 10px; transform: translateY(-10%); display: inline-block; background-color: #F9F9F9; padding: 10px; border: 1px solid #E8E8E8; border-radius: 5px;">
+        <label for="encryption_algorithm" class="required"
+            style="color: rgb(0, 0, 0); display: block; margin-bottom: 5px;">Supported Encryptions:</label>
         <select id="encryption_algorithm" name="encryption[algorithm]">
-          <option value="DES">DES</option>
+            <option value="DES">DES</option>
         </select>
-      </div>
+    </div>
     <!-- CODE FOR BOXES! -->
     <section class="row">
         <!--Enc and Dec containers-->
