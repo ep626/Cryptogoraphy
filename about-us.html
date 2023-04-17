@@ -61,60 +61,9 @@
         </div>
     </header>
     <!--Dropdown test-->
-    <div
-        style="z-index: 100; position: fixed; top: 10%; right: 10px; padding-right: 10px; transform: translateY(-10%); display: inline-block; background-color: #F9F9F9; padding: 10px; border: 1px solid #E8E8E8; border-radius: 5px;">
-        <label for="encryption_algorithm" class="required"
-            style="color: rgb(0, 0, 0); display: block; margin-bottom: 5px;">Supported Encryptions:</label>
-        <select id="encryption_algorithm" name="encryption[algorithm]">
-            <option value="DES">DES</option>
-            <option value="AES">AES</option>
-        </select>
-    </div>
-    <section class="row">
-        <!--Enc and Dec containers-->
-        <div class="container">
-            <div class="row justify-content-center">
-                <div class="col-md-6">
-                    <h2 style="color: rgb(197, 229, 16);">Encrypt</h2>
-                    <label for="input" style="color: rgb(197, 229, 16);">Enter a string to be encrypted:</label>
-                    <textarea id="input" class="form-control input-lg ng-pristine ng-valid ng-touched" rows="4"
-                        placeholder="Enter plain text to hash" ng-model="textToEncrypt" name="textToEncrypt"></textarea>
-                </div>
-                <div class="col-md-6">
-                    <h2 style="color: rgb(197, 229, 16);">Decrypt</h2>
-                    <label for="input-box" style="color: rgb(197, 229, 16);">Enter a string to be decrypted:</label>
-                    <textarea id="decrypt-input" class="form-control input-lg ng-pristine ng-valid ng-touched" rows="4"
-                        placeholder="Enter text to decrypt" ng-model="textToDecrypt" name="textToDecrypt"></textarea>
-                </div>
-            </div>
-        </div>
-        <!--Modes Of Operations box-->
-        <div class="container">
-            <label for="MODE" style="color: rgb(197, 229, 16);">Select a Mode of Operation:</label>
-            <select class="form-control" id="mode-select">
-                <option>ECB</option>
-                <option>CBC</option>
-                <option>CFB</option>
-            </select>
-        </div>
-        <!-- CODE FOR PKEY Box -->
-        <div class="container">
-            <div class="form-group">
-                <label for="input" style="color: rgb(197, 229, 16);">Enter a Key</label>
-                <input type="key" class="form-control" id="pKey" placeholder="Enter Private key OR leave empty if using public key encryption">
-            </div>
-        </div>
-        <!--Buttons-->
-        <div class="container">
-            <div class="row justify-content-center">
-                <div class="col-md-6 text-center">
-                    <button type="button" class="btn btn-secondary btn-lg" onclick="encrypt()">Encrypt string →</button>
-                </div>
-                <div class="col-md-6 text-center">
-                    <button type="button" class="btn btn-secondary btn-lg" onclick="decrypt()">← Decrypt string </button>
-                </div>
-            </div>
-        </div>
+    <section class="row text-about">
+       <h1>About us</h1>
+       <p>Some text here.</p>
     </section>
     <!-- <section class="text-about">
         <h1>Data Encryption Standard (DES): Understanding the Limitations</h1>
