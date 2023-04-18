@@ -1,3 +1,6 @@
+
+///SHIT THAT WORKS DONT TOUCH!
+
 let sessionPrivateKeyPrime = null
 
 function getMode() {
@@ -5,6 +8,7 @@ function getMode() {
 
   return modeSelect.options[modeSelect.selectedIndex].value;
 }
+///SHIT THAT WORKS DONT TOUCH!
 
 function getPrivateKey(callback) {
   const privateKeyInput = document.getElementById("pKey")
@@ -20,12 +24,14 @@ function getPrivateKey(callback) {
   }
   else callback(privateKeyValue)
 }
+///SHIT THAT WORKS DONT TOUCH!
 
 function getEncryptionAlgo() {
   const encryptionAlgoSelect = document.getElementById("encryption_algorithm")
 
   return encryptionAlgoSelect.options[encryptionAlgoSelect.selectedIndex].text
 }
+///SHIT THAT WORKS DONT TOUCH!
 
 function encrypt() {
   const plainTextInput = document.getElementById("input");
@@ -51,6 +57,7 @@ function encrypt() {
     output.value = ciphertext;
   })
 }
+///SHIT THAT WORKS DONT TOUCH!
 
 function decrypt() {
   const cipherTextInput = document.getElementById("decrypt-input");
@@ -82,7 +89,8 @@ function decrypt() {
     output.value = plainText;
   })
 }
-
+///SHIT THAT WORKS DONT TOUCH!
+//This is used to generate a random prime number for the Public key encryptions.
 function randomPrime(callback) {
   const bits = 256;
 
