@@ -8,4 +8,4 @@
 ## Tony Rojas , Raul Mendy , Ethan Prendergast
 
 # Gif
-![](https://github.com/CIS-Prooject/Animation.gif)
+![](https://github.com/ep626/CIS-Prooject/Animation.gif)
