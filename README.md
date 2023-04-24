@@ -7,3 +7,5 @@
 # Group Members
 ## Tony Rojas , Raul Mendy , Ethan Prendergast
 
+# Gif
+![](https://github.com/CIS-Prooject/Animation.gif)
