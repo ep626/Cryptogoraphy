@@ -1,5 +1,4 @@
 
-///SHIT THAT WORKS DONT TOUCH!
 
 let sessionPrivateKeyPrime = null
 
